@@ -83,7 +83,7 @@ async function resizeImage() {
     contentType: conType
   }
 
-  const apiUrl = 'https://5cgdjhpoye.execute-api.us-east-1.amazonaws.com/dev/resize';
+  const apiUrl = 'https://5cgdjhpoye.execute-api.us-east-1.amazonaws.com/dev/resize/';
   let resp = await axios.post(apiUrl, params);
   console.log("resize response :: " , resp);
   if(resp.data.success === true) {
